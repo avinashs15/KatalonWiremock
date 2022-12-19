@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "9F4F71BDDF7CDDF1F30E2D69EF976214",
+  "keywordClasses": [
+    {
+      "name": "utility.Utility",
+      "keywordMethods": [
+        {
+          "name": "runBatch",
+          "parameters": [
+            {
+              "name": "path",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
