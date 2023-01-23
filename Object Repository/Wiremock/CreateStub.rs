@@ -10,7 +10,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;request\&quot;: {\n        \&quot;url\&quot;: \&quot;/UserData/1\&quot;,\n        \&quot;method\&quot;: \&quot;GET\&quot;\n    },\n    \&quot;response\&quot;: {\n        \&quot;status\&quot;: 200,\n\n           \&quot;jsonBody\&quot; : {\&quot;firstname\&quot; : \&quot;Katalon\&quot;,\&quot;age\&quot; : 40 , \&quot;phoneNumber\&quot; : 998899898, \&quot;lastName\&quot; : \&quot;TestLastName\&quot;},\n        \&quot;headers\&quot; : {\n            \&quot;content-Type\&quot; : \&quot;application-json\&quot;\n        }\n    }\n}\n}&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;request\&quot;: {\n        \&quot;url\&quot;: \&quot;/UserData/BadData\&quot;,\n        \&quot;method\&quot;: \&quot;GET\&quot;\n    },\n    \&quot;response\&quot;: {\n        \&quot;status\&quot;: 200,\n\n           \&quot;jsonBody\&quot; : {\&quot;firstname\&quot; : \&quot;Katalon\&quot;,\&quot;age\&quot; : 23.5 , \&quot;phoneNumber\&quot; : 998899898, \&quot;lastName\&quot; : \&quot;TestLastName\&quot;},\n        \&quot;headers\&quot; : {\n            \&quot;content-Type\&quot; : \&quot;application-json\&quot;\n        }\n    }\n}\n}&quot;,
   &quot;contentType&quot;: &quot;text/plain&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>

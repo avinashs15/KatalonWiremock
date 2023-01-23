@@ -16,10 +16,30 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.testobject.ResponseObject as ResponseObject
+import com.kms.katalon.core.testobject.RequestObject as RequestObject
+import groovy.json.JsonSlurper as JsonSlurper
 
 CustomKeywords.'utility.Utility.Unit'()
 
-CustomKeywords.'com.katalon.plugin.keyword.connection.DatabaseKeywords.closeConnection'(null)
 
-status = CustomKeywords.'utility.Utility.setUserData'('asd', 'asd', 20, 12312323)
+ResponseObject response = WS.sendRequest(findTestObject('Wiremock/GetStubRequest'))
+JsonSlurper slurper = new JsonSlurper()
 
+parsedJson = slurper.parseText(response.getResponseText())
+
+assert CustomKeywords.'utility.Utility.setUserData'(parsedJson.firstname, parsedJson.lastName, parsedJson.age, parsedJson.phoneNumber) == 8
+assert CustomKeywords.'utility.Utility.setUserData'('asd', 'asd', 35, 12312323) == 7
+
+response = WS.sendRequest(findTestObject('Wiremock/GetInvalidData'))
+slurper = new JsonSlurper()
+
+parsedJson = slurper.parseText(response.getResponseText())
+
+System.println (CustomKeywords.'utility.Utility.setUserData'(parsedJson.firstname, parsedJson.lastName, parsedJson.age, parsedJson.phoneNumber))
+response = WS.sendRequest(findTestObject('Wiremock/getBadData'))
+slurper = new JsonSlurper()
+
+parsedJson = slurper.parseText(response.getResponseText())
+
+System.println (CustomKeywords.'utility.Utility.setUserData'(parsedJson.firstname, parsedJson.lastName, parsedJson.age, parsedJson.phoneNumber))

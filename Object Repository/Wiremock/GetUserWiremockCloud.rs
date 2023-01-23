@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>GetStubRequest</name>
+   <name>GetUserWiremockCloud</name>
    <tag></tag>
-   <elementGuidId>9770cbbc-6177-4ef0-a68f-4b29b3eae181</elementGuidId>
+   <elementGuidId>34bc9d77-3b0b-4ce6-98e3-8e5bcebc9ee7</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>0</connectionTimeout>
@@ -15,7 +15,7 @@
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>http://localhost:8081/UserData/3</restUrl>
+   <restUrl>https://p1g3p.wiremockapi.cloud/User2</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

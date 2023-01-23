@@ -48,7 +48,7 @@ public class Utility {
 	def Unit() {
 		userPackage.Main userdata = new userPackage.Main();
 		userdata.setFirstName("FromKatalon");
-		userdata.setUserData("something", "lanme", 35, 99282882)
+		userdata.setUserData("FName", "LName", 35, 99282882)
 		println (userdata.firstName);
 		println(userdata.CalculateInterest());
 	}

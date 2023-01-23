@@ -21,6 +21,7 @@ import com.kms.katalon.core.annotation.AfterTestCase
 import com.kms.katalon.core.annotation.AfterTestSuite
 import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.context.TestSuiteContext
+import com.github.tomakehurst.wiremock.client.WireMock
 
 class WiremockServer {
 }
