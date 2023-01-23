@@ -1,33 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>CreateStub</name>
+   <name>getAllRequests</name>
    <tag></tag>
-   <elementGuidId>eb3f0965-cb43-4de6-ad1f-4b4aa3ec227c</elementGuidId>
+   <elementGuidId>25075b55-9354-4707-80f2-70d6f944655e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;request\&quot;: {\n        \&quot;url\&quot;: \&quot;/UserData/1\&quot;,\n        \&quot;method\&quot;: \&quot;GET\&quot;\n    },\n    \&quot;response\&quot;: {\n        \&quot;status\&quot;: 200,\n\n           \&quot;jsonBody\&quot; : {\&quot;firstname\&quot; : \&quot;Katalon\&quot;,\&quot;age\&quot; : 40 , \&quot;phoneNumber\&quot; : 998899898, \&quot;lastName\&quot; : \&quot;TestLastName\&quot;},\n        \&quot;headers\&quot; : {\n            \&quot;content-Type\&quot; : \&quot;application-json\&quot;\n        }\n    }\n}\n}&quot;,
-  &quot;contentType&quot;: &quot;text/plain&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
-      <type>Main</type>
-      <value>text/plain</value>
-      <webElementGuid>97789c4e-e7d9-4959-80a1-6f4fcbdf6ad0</webElementGuid>
-   </httpHeaderProperties>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <katalonVersion>8.5.2</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>http://localhost:8081/__admin/mappings</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>http://localhost:8080/__admin/requests</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

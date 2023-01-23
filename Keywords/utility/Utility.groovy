@@ -1,6 +1,7 @@
 package utility
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import userPackage.UserData
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -41,5 +42,22 @@ public class Utility {
 		if(proc.exitValue() != 0){
 			KeywordUtil.markFailed("Out:" + outputStream.toString() + ", Err: " + errStream.toString())
 		}
+	}
+
+	@Keyword
+	def Unit() {
+		userPackage.Main userdata = new userPackage.Main();
+		userdata.setFirstName("FromKatalon");
+		userdata.setUserData("something", "lanme", 35, 99282882)
+		println (userdata.firstName);
+		println(userdata.CalculateInterest());
+	}
+
+	@Keyword
+	def int setUserData(String fName, String lName, int age, int phoneNumber ) {
+		userPackage.Main userdata = new userPackage.Main();
+		userdata.setUserData(fName,lName, age, phoneNumber);
+		println(userdata.CalculateInterest());
+		return userdata.CalculateInterest();
 	}
 }
